@@ -26,3 +26,9 @@ mysql -uroot -p 123456
 ```
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (13)
 ```
+
+## docker
+
+```
+docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+```
